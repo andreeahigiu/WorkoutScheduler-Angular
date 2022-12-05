@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let day of daysArray">
+            <div *ngIf="day" class="day-label">{{day.Day}}</div>
+            <div *ngIf="day.Morning">
+                <div class="duration-activity">
+                    <div *ngIf="day.Morning.End"> {{day.Morning.Start}} - {{day.Morning.End}} </div>
+                    <div class="activity">{{ day.Morning.Activity }}</div>
+                </div>
+
+            </div>
+            <div *ngIf="day.Evening">
+                <div class="duration-activity">
+                    <div *ngIf="day.Evening.End"> {{day.Evening.Start}} - {{day.Evening.End}} </div>
+                    <div class="activity">{{ day.Evening.Activity }}</div>
+                </div>            </div>
+
+        </div>
+        <div>
+            <div> {{hoursTotal}} </div>
+            <div> {{minsTotal}} </div>
+        </div>
+    </div>
+</div>

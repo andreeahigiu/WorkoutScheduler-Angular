@@ -1,0 +1,104 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <fieldset class="scheduler-border">
+                <legend class="scheduler-border">Dimineata</legend>
+                <div class="select-container">
+                    <div class="labels-col">
+                        <label for="activity">Activitate</label>
+                        <label for="start">De la</label>
+                        <label for="end">Pana la</label>
+                    </div>
+
+                    <div class="input-col">
+                    <select 
+                        class="input-style"
+                        name="activity" 
+                        id="activity"
+                        [(ngModel)]='defaultActivityMorning' 
+                        (change)="onChangeSelect($event, 'Morning')">
+                    <option disabled selected value> -- selectati o optiune -- </option>
+                    <option value=0>Alergare usoara</option>
+                    <option value=1>Tenis</option>
+                    <option value=2>Inot</option>
+                    <option value=3>Fotbal</option>
+                    <option value=4>Handbal</option>
+                    <option value=5>Volei</option>
+                    </select>
+
+                    <input
+                        class="input-style"
+                        type="time"
+                        name="start"
+                        id="start"
+                        [(ngModel)]='defaultStartMorning'
+                        (change)="onChangeStart($event, 'Morning')">
+
+                    <input 
+                        class="input-style"
+                        type="time"
+                        name="end"
+                        id="end"
+                        [(ngModel)]='defaultEndMorning'
+                        (change)="onChangeEnd($event,'Morning')">
+                        
+                    </div>
+
+                </div>
+
+
+
+                
+
+
+            </fieldset>
+
+            <fieldset class="scheduler-border">
+                <legend class="scheduler-border">Seara</legend>
+                <div class="select-container">
+                    <div class="labels-col">
+                        <label for="activity">Activitate</label>
+                        <label for="start">De la</label>
+                        <label for="end">Pana la</label>
+                    </div>
+
+                    <div class="input-col">
+                    <select 
+                        class="input-style"
+                        name="activity" 
+                        id="activity"
+                        [(ngModel)]='defaultActivityEvening'
+                        (change)="onChangeSelect($event, 'Evening')">
+                    <option disabled selected value> -- selectati o optiune -- </option>
+                    <option value=0>Alergare usoara</option>
+                    <option value=1>Tenis</option>
+                    <option value=2>Inot</option>
+                    <option value=3>Fotbal</option>
+                    <option value=4>Handbal</option>
+                    <option value=5>Volei</option>
+                    </select>
+
+                    <input
+                        class="input-style"
+                        type="time"
+                        name="start"
+                        id="start"
+                        [(ngModel)]='defaultStartEvening'
+                        (change)="onChangeStart($event,'Evening')">
+                    <input 
+                        class="input-style"
+                        type="time"
+                        name="end"
+                        id="end"
+                        [(ngModel)]='defaultEndEvening'
+                        (change)="onChangeEnd($event,'Evening')">
+                        
+    
+                    </div>
+
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>

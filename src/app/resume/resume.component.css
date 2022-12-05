@@ -1,0 +1,14 @@
+.duration-activity{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    /* margin-top:10px */
+}
+
+.day-label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.activity {
+    margin-left: 10px;
+}

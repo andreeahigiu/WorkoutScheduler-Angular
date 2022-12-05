@@ -1,0 +1,40 @@
+.tabs-container{
+list-style-type: none;
+margin-left: 14vw;
+display: flex;
+flex-direction: row;
+padding-inline-start: 0;
+
+}
+
+ .tab-link{
+    /* width: 10%;
+    position: relative;
+    height: 100%;
+    padding: 5px;
+    float: left;
+    text-align: center; */
+    display: flex;
+    padding: 5px;
+    border: solid 0.5px rgb(136, 136, 136);
+    background-color: #eee;
+    
+}
+
+.tabs-container .tab-link:hover{
+    background-color:rgb(214, 214, 214);
+}
+
+.selected {
+    background-color: rgb(255, 255, 255);
+}
+
+.content-row{
+    min-height:350px;
+    height: auto;
+}
+
+.buttons-container{
+    display:flex;
+    justify-content: space-between;
+}
